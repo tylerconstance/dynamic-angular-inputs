@@ -1,0 +1,19 @@
+body {
+  background: #6DBED7;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #666;
+}
+
+input {
+  display: block;
+  color: black;
+  padding: 5px 15px;
+  border: none;
+  margin: 5px auto;
+  background: #eee;
+  width: 300px;
+}

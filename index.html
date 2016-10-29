@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Dynamic Inputs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div ng-app='app'>
+<div ng-controller='MainCtrl'>
+  <h1>{{title}}</h1>
+  <form class="myForm">
+    <input ng-repeat="thing in things"
+           placeholder="Enter something"
+           ng-value=thing.name
+           ng-model=thing.name
+           class="thing"
+           ng-class="{'last':$last}"
+           ng-change="updateObject()">
+    </input>
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
